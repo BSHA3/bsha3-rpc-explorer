@@ -1,7 +1,7 @@
 {
-  "name": "btc-rpc-explorer",
+  "name": "bsha3-rpc-explorer",
   "version": "1.0.0",
-  "description": "Explorer for Bitcoin and RPC-compatible blockchains",
+  "description": "Explorer for BSHA3, Bitcoin, and RPC-compatible blockchains",
   "private": false,
   "scripts": {
     "start": "node ./bin/www",
@@ -17,14 +17,14 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/janoside/btc-rpc-explorer.git"
+    "url": "git+https://github.com/bsha3/bsha3-rpc-explorer.git"
   },
   "dependencies": {
     "bitcoin-core": "2.0.0",
-    "bitcoinjs-lib": "3.3.2",
+    "bitcoinjs-lib": "bsha3/bitcoinjs-lib",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
-    "crypto-js": "3.1.9-1",
+    "crypto-js": "bsha3/crypto-js#sha3-correction",
     "debug": "~2.6.0",
     "decimal.js": "7.2.3",
     "electrum-client": "chaintools/node-electrum-client#90e533753",

@@ -6,6 +6,7 @@ var bitcoinCore = require("bitcoin-core");
 var qrcode = require('qrcode');
 var bitcoinjs = require('bitcoinjs-lib');
 var sha256 = require("crypto-js/sha256");
+var sha3 = require("crypto-js/sha3");
 var hexEnc = require("crypto-js/enc-hex");
 var Decimal = require("decimal.js");
 

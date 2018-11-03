@@ -3,6 +3,8 @@ var config = require("../config.js");
 var coins = require("../coins.js");
 
 var SHA256 = require("crypto-js/sha256");
+var SHA3 = require("crypto-js/sha3");
+
 var earliestBlockTime = 1231006505;
 var avgBlockTime = 200000;
 var currentBlockHeight = 1234567;
@@ -40,12 +42,12 @@ function getBlockByHeight(blockHeight) {
 	var txCount = utils.seededRandomIntBetween(blockHeight, 1, 20);
 	var txids = [];
 	for (var i = 0; i < txCount; i++) {
-		txids.push(SHA256("" + blockHeight + "_" + i));
+		txids.push(SHA3("" + blockHeight + "_" + i));
 	}
 
 	return new Promise(function(resolve, reject) {
 		resolve({
-			"hash": SHA256("" + blockHeight),
+			"hash": SHA3("" + blockHeight),
 			"confirmations": currentBlockHeight - blockHeight,
 			"strippedsize": 56098,
 			"size": 65384,
@@ -60,9 +62,9 @@ function getBlockByHeight(blockHeight) {
 			"nonce": 3615953854,
 			"bits": "17376f56",
 			"difficulty": "5077499034879.017",
-			"chainwork": SHA256("xyz" + blockHeight),
-			"previousblockhash": SHA256("" + (blockHeight - 1)),
-			"nextblockhash": SHA256("" + (blockHeight + 1))
+			"chainwork": SHA3("xyz" + blockHeight),
+			"previousblockhash": SHA3("" + (blockHeight - 1)),
+			"nextblockhash": SHA3("" + (blockHeight + 1))
 		});
 	});
 }

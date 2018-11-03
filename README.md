@@ -1,4 +1,4 @@
-# BTC RPC Explorer
+# BSHA3 RPC Explorer
 
 Simple, database-free Bitcoin blockchain explorer, via RPC. Built with Node.js, express, bootstrap-v4.
 
@@ -35,7 +35,7 @@ The below instructions are geared toward BTC, but can be adapted easily to other
 
 ## Instructions
 
-1. Clone this repo: `git clone https://github.com/janoside/btc-rpc-explorer`
+1. Clone this repo: `git clone https://github.com/janoside/bsha3-rpc-explorer`
 2. `npm install`
 3. `npm run build`
 4. Edit the "rpc" settings in [app/credentials.js](app/credentials.js) to target your node
@@ -46,8 +46,8 @@ The below instructions are geared toward BTC, but can be adapted easily to other
 
 ## Run via Docker
 
-1. `docker build -t btc-rpc-explorer .`
-2. `docker run -p 3002:3002 -it btc-rpc-explorer`
+1. `docker build -t bsha3-rpc-explorer .`
+2. `docker run -p 3002:3002 -it bsha3-rpc-explorer`
 
 # Donate
 

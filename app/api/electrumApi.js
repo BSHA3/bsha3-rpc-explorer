@@ -53,7 +53,7 @@ function connectToServer(host, port) {
 		console.log("Connecting to ElectrumX Server: " + host + ":" + port);
 
 		var electrumClient = new ElectrumClient(port, host, 'tls');
-		electrumClient.initElectrum({client:"btc-rpc-explorer-v1.1", version:"1.2"}).then(function(res) {
+		electrumClient.initElectrum({client:"bsha3-rpc-explorer-v1.1", version:"1.2"}).then(function(res) {
 			console.log("Connected to ElectrumX Server: " + host + ":" + port + ", versions: " + res);
 
 			electrumClients.push(electrumClient);
