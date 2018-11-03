@@ -35,7 +35,7 @@ The below instructions are geared toward BTC, but can be adapted easily to other
 
 ## Instructions
 
-1. Clone this repo: `git clone https://github.com/janoside/bsha3-rpc-explorer`
+1. Clone this repo: `git clone https://github.com/BSHA3/bsha3-rpc-explorer`
 2. `npm install`
 3. `npm run build`
 4. Edit the "rpc" settings in [app/credentials.js](app/credentials.js) to target your node
