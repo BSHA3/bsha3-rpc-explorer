@@ -24,7 +24,7 @@
     "bitcoinjs-lib": "bsha3/bitcoinjs-lib",
     "body-parser": "~1.18.2",
     "cookie-parser": "~1.4.3",
-    "crypto-js": "bsha3/crypto-js#sha3-correction",
+    "crypto-js": "bsha3/crypto-js",
     "debug": "~2.6.0",
     "decimal.js": "7.2.3",
     "electrum-client": "chaintools/node-electrum-client#90e533753",
