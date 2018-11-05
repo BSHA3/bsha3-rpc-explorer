@@ -5,7 +5,7 @@ module.exports = {
 
 	rpc: {
 		host:"localhost",
-		port:8332,
+		port:8334,
 		username:"username",
 		password:"password"
 	},
