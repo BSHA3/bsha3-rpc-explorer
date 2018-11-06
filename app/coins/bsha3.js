@@ -32,11 +32,11 @@ var btcCurrencyUnits = [
 module.exports = {
 	name:"BSHA3",
 	ticker:"BSHA3",
-	logoUrl:"/img/logo/btc.svg",
+	logoUrl:"/img/logo/bsha3.svg",
 	siteTitle:"BSHA3 Explorer",
-	siteDescriptionHtml:"<b>BTC Explorer</b> is <a href='https://github.com/janoside/btc-rpc-explorer). If you run your own [Bitcoin Full Node](https://bitcoin.org/en/full-node), **BTC Explorer** can easily run alongside it, communicating via RPC calls. See the project [ReadMe](https://github.com/janoside/btc-rpc-explorer) for a list of features and instructions for running.",
-	nodeTitle:"BSHA3 Full Node",
-	nodeUrl:"https://bitcoin.org/en/full-node",
+	siteDescriptionHtml:"<b>Welcome to the BSHA3 block explorer!</b> This is a tool you can use to review the entire blockchain history, which includes transactions packed into blocks.",
+	nodeTitle:"BSHA3 Full-Node",
+	nodeUrl:"https://explorer.bsha3.org/",
 	demoSiteUrl: "https://btc.chaintools.io",
 	miningPoolsConfigUrls:[
 		"https://raw.githubusercontent.com/blockchain/Blockchain-Known-Pools/master/pools.json",
