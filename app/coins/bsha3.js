@@ -47,16 +47,16 @@ module.exports = {
 	currencyUnitsByName:{"BSHA3":btcCurrencyUnits[0], "mBSHA3":btcCurrencyUnits[1], "bits":btcCurrencyUnits[2], "sat":btcCurrencyUnits[3]},
 	baseCurrencyUnit:btcCurrencyUnits[3],
 	feeSatoshiPerByteBucketMaxima: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 15, 20, 25, 50, 75, 100, 150],
-	genesisBlockHash: "000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-	genesisCoinbaseTransactionId: "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
+	genesisBlockHash: "0000000090692ea88f3c87dc1cd28e3972c6b86d6f2e7c8fd8d267e88c4d65f1",
+	genesisCoinbaseTransactionId: "6da02f100f366c604834400e249047aa7c0c594c957783be15fb223543aa7861",
 	genesisCoinbaseTransaction: {
-		"hex": "01000000010000000000000000000000000000000000000000000000000000000000000000ffffffff0804ffff001d02fd04ffffffff0100f2052a01000000434104f5eeb2b10c944c6b9fbcfff94c35bdeecd93df977882babc7f3a2cf7f5c81d3b09a68db7f0e04f21de5d4230e75e6dbe7ad16eefe0d4325a62067dc6f369446aac00000000",
-		"txid": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-		"hash": "4a5e1e4baab89f3a32518a88c31bc87f618f76673e2cc77ab2127b7afdeda33b",
-		"size": 204,
-		"vsize": 204,
-		"version": 1,
-		"confirmations":475000,
+		"hex": "",
+		"txid": "6da02f100f366c604834400e249047aa7c0c594c957783be15fb223543aa7861",
+		"hash": "6da02f100f366c604834400e249047aa7c0c594c957783be15fb223543aa7861",
+		"size": 289,
+		"vsize": 289,
+		"version": 4,
+		"confirmations":6563,
 		"vin": [
 			{
 				"coinbase": "04ffff001d0104455468652054696d65732030332f4a616e2f32303039204368616e63656c6c6f72206f6e206272696e6b206f66207365636f6e64206261696c6f757420666f722062616e6b73",
@@ -90,7 +90,7 @@ module.exports = {
 		exchangedCurrencyName:"usd",
 		responseBodySelectorFunction:function(responseBody) {
 			if (responseBody[0] && responseBody[0].price_usd) {
-				return responseBody[0].price_usd;
+				return 0; //responseBody[0].price_usd;
 			}
 			
 			return -1;
