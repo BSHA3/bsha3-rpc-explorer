@@ -26,7 +26,7 @@ function getGenesisCoinbaseTransactionId() {
 
 
 function tryCacheThenRpcApi(cache, cacheKey, cacheMaxAge, rpcApiFunction, cacheConditionFunction) {
-	//console.log("tryCache: " + cacheKey + ", " + cacheMaxAge);
+	console.log("tryCache: " + cacheKey + ", " + cacheMaxAge);
 	if (cacheConditionFunction == null) {
 		cacheConditionFunction = function(obj) {
 			return true;
@@ -81,7 +81,7 @@ function getUptimeSeconds() {
 }
 
 function getChainTxStats(blockCount) {
-	return tryCacheThenRpcApi(miscCache, "getChainTxStats-" + blockCount, 120000, function() {
+	return tryCacheThenRpcApi(miscCache, "getChainTxStats-" + blockCount, 6000, function() {
 		return rpcApi.getChainTxStats(blockCount);
 	});
 }

@@ -5,7 +5,7 @@ var currentCoin = "BSHA3";
 
 module.exports = {
 	cookiePassword: "0x000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f",
-	demoSite: true,
+	demoSite: false,
 	coin: currentCoin,
 
 	rpcBlacklist:[
@@ -78,10 +78,10 @@ module.exports = {
 	],
 
 	site: {
-		blockTxPageSize:20,
+		blockTxPageSize:100,
 		addressTxPageSize:20,
-		txMaxInput:15,
-		browseBlocksPageSize:20
+		txMaxInput:25,
+		browseBlocksPageSize:30
 	},
 
 	credentials: credentials,
@@ -106,19 +106,17 @@ module.exports = {
 	],
 
 	donationAddresses:{
-		coins:["BTC", "LTC"],
-		sites:{"BTC":"https://btc.chaintools.io", "LTC":"https://ltc.chaintools.io"},
-
-		"BTC":{address:"3NPGpNyLLmVKCEcuipBs7G4KpQJoJXjDGe"},
-		"LTC":{address:"ME4pXiXuWfEi1ANBDo9irUJVcZBhsTx14i"}
+		coins:["BSHA3","BTC"],
+		sites:{"BSHA3":"https://explorer.bsha3.com","BTC":"https://btc.chaintools.io"},
+		"BSHA3":{address:"ceJB3SirEaMHQXgfhxnNhxhWAPpxTZQSwu"},
+		"BTC":{address:"195UZWyU794SP8QJ33bLfEL4dcGusTMURa"}
 	},
 
 	headerDropdownLinks: {
 		title:"Related Sites",
 		links:[
 			{name: "Bitcoin Explorer", url:"https://btc.chaintools.io", imgUrl:"/img/logo/btc.svg"},
-			{name: "Litecoin Explorer", url:"https://ltc.chaintools.io", imgUrl:"/img/logo/ltc.svg"},
-			{name: "Lightning Explorer", url:"https://lightning.chaintools.io", imgUrl:"/img/logo/lightning.svg"},
+			{name: "BTC Lightning Explorer", url:"https://lightning.chaintools.io", imgUrl:"/img/logo/lightning.svg"},
 		]
 	}
 };
