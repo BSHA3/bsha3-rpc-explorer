@@ -576,8 +576,10 @@ router.get("/address/:address", function(req, res) {
 
 		var promises = [];
 		if (global.electrumApi) {
-			var addrScripthash = hexEnc.stringify(sha3(hexEnc.parse(validateaddressResult.scriptPubKey)));
+                       //console.log(validateaddressResult.scriptPubKey)
+                       var addrScripthash = hexEnc.stringify(sha3(hexEnc.parse(validateaddressResult.scriptPubKey), { outputLength: 256 }));
 			addrScripthash = addrScripthash.match(/.{2}/g).reverse().join("");
+console.log(addrScripthash)
 
 			res.locals.electrumScripthash = addrScripthash;
 
